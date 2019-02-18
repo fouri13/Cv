@@ -1,0 +1,124 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <title>F.Fabien</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../js/add.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inspiration from: https://dribbble.com/shots/1428271-iOS7-Challenge-App-->
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 sidebar2">
+                <div class="logo text-center">
+                    <img src="../img/photoid.jpg" class="img-responsive center-block" alt="Logo">
+                  <h4>Fournier Fabien</h4>
+                    <div class="coins">
+                      <i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+                    </div>
+                      <p class="coins">Web Développeur junior</p>
+                    <div>
+                        <button onclick="on()"type="button" class="btn btn-default Add-friend">
+                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>  Me contacter</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="left-navigation">
+                    <ul class="list">
+                    <li onclick="document.location.href='../index.html'"><i class="glyphicon glyphicon-user" id="Profil" aria-hidden="true"></i>Profil</li>
+                    <li onclick="document.location.href='ExperiencePro.html'"><i class="fa fa-hand-o-right" id="Experience" aria-hidden="true"></i>Experience Pro</li></a>
+                    <li onclick="document.location.href='Comp.html'"><i class="fa fa-certificate" id="Comp" aria-hidden="true"></i>Competences Habillitions</li>
+                    <li onclick="document.location.href='Hobbies.html'"><i class="fa fa-users" id="Hobbies" aria-hidden="true"></i>Hobbies</li>
+                    <li onclick="document.location.href='../img/Cv1.pdf'"><i class="glyphicon glyphicon-download-alt" id="Hobbies" aria-hidden="true"></i>Cv en PDF</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main_content">
+            	<div id="Add">
+	            	  <h1>Formations</h1>
+                        <ul>
+                            <li>Formation Simplon DEV JAVA (en cours)</li>
+                            <li>Formation Simplon(visiteur 1 mois) - Marseille</li>
+                            <li>Piscine école 42</li>
+                            <li>DAEU - FAC ST CHARLES - Marseille</li>
+                            <li>BEP -électricien d'équipement - AFPA Istres</li>
+                            <li>Bac PRO - Commerce - Salon de provence</li>
+                        </ul>
+                        <figure><figcaption>
+                            <img class="Img_trav" src="../img/trav.jpg">
+                        </figcaption></figure>
+                        <h1>Expériences Professionnelles</h1>
+                        <ul>
+                            <li>Hackathlon(Code4Mars) - Frioul</li>
+                            <li>Midi Traçage - Proman</li>
+                            <li>SSP Aeroport Marignane - Triangle Interim</li>
+                            <li>Toy's - Vitrolles</li>
+                            <li>Intermaché Vitrolles</li>
+                            <li>Best - Proman</li>
+                            <li>Agent de tri - Proman</li>
+                            <li>Stage COFELY Ineo - Marseille</li>
+                            <li>Diverse Interim</li>
+                            <li>Placo/Peinture - Proman</li>
+                            <li>Tracage au sol - Proman</li>
+                            <li>ChauffeurVl/aide livreur -Proman</li>
+                            <li>Ortec - Crit interim</li>
+                            <li>Agent de quai - Proman</li>
+                        </ul>
+				</div>
+			</div>
+        </div>
+    </div>
+   <div id="Overlay">
+            <div id="contenu">
+            <div class="contact">
+                <h3>FOURNIER FABIEN</h3>
+                    <ul>
+                        <li>26ans</li>
+                        <li>06.60.90.03.64</li>
+                          <li>fabfournier11@gmail.com</li>
+                            <li>Rognac</li>
+                    </ul>
+            </div>
+                <div class="col-md-8 col-md-offset-2" id="form">
+                    <form class="form-horizontal" method="POST" action="content/mail.php">
+                        <div class="form-group">
+                            <label for="Nom">Nom</label>
+                            <input type="text" name="User_name" class="form-control" id="Nom" placeholder="Votre Nom">
+                        </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" name="User_email" class="form-control" id="Email" placeholder="Email@mail.com">
+                    </div>
+                    <div class="form-group ">
+                        <label for="Message">Message</label>
+                        <textarea  class="form-control" name="User_message" placeholder="Votre Message"></textarea> 
+                    </div>
+                        <button type="submit" class="btn btn-default">Valider</button>
+                    </form>
+                    <div>
+                        <button onclick="off()">Annuler</button>
+                    </div>
+                    <script>
+                        function on() 
+                        {
+                            document.getElementById("Overlay").style.display = "block";
+                        }
+                        function off() 
+                        {
+                            document.getElementById("Overlay").style.display = "none";
+                        } 
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

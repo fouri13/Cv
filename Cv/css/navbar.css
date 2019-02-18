@@ -1,0 +1,182 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+html,body, .container-fluid, .sidebar2,.main-content{
+  height:100%;
+}
+a,a:link
+{
+  text-decoration:none; 
+}
+ul 
+{
+  list-style: none;
+  position: relative;
+  margin-left:0;
+  /* border-left: 3px solid; */
+  padding-left:0;
+}
+.sidebar2 {
+    background-color: #5d77a0;
+    padding: 0px !important;
+    box-shadow: 2px 2px 2px 2px #262a35;
+    z-index: 1000;
+    height: 100%;
+    position: fixed;
+}
+.logo {
+    min-height:200px;
+    color:#afb1b5;
+}
+.logo>img {
+    margin-top: 30px;
+    padding: 1px;
+    border: 3px solid #F17153;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 13px 4px 20px 7px #445273;
+}
+.btn.Add-friend
+{
+  background-color:#F17153;
+<!--#e65e50-->
+  border: 1px solid #50e6df;
+  color:#eee;
+}
+.btn.Add-friend:hover,.btn.Add-friend:active,.btn.Add-friend:active:focus,.btn.Add-friend:active:hover,.btn.Add-friend:visited,.btn.Add-friend:focus
+{
+  background-color:#F17153;
+  border: 0.5px solid transparent;
+  color:white;
+  outline:none;
+  font-weight:600;
+}
+.coins
+{
+  display:inline-block;
+  font-size:20px;
+  font-family:'"Helvetica Neue",Helvetica,Arial,sans-serif';
+}
+.list 
+{
+  color: #eee;
+  list-style: none;
+  padding-left: 0px;
+}
+li:nth-child(odd) 
+{
+  background-color: #3e3f5a;
+  border: 3px solid #5d77a0;
+  border-radius: 10px;
+}
+li>i 
+{
+  margin-right:15px;
+}
+.list> li 
+{
+  padding: 15px 0px 15px 40px;
+  font-size: 16px;
+  font-weight:lighter;
+  border-radius: 10px;
+}
+.list>li:hover 
+{
+  color: white;
+  box-shadow:1px 1px 10px 1px #50e6df inset;
+  transition: padding-left 0.2s linear;
+  padding-left: 60px;
+
+}
+body
+{
+  font-weight: bold;
+  background-size:cover;
+  background-color:#5d77a0;
+}
+.main-content
+{ 
+  color:#fff; 
+  text-align: right;
+}
+/************************content***********/
+
+#Add, #Index
+{
+  text-align: center;
+  color: white;
+  padding-right: 10em;
+  padding-left: 25em;
+  margin-left: 10em;
+}
+.Img_comp
+{
+  margin-top: 3em;
+}
+.Img_trav
+{
+  width: 30em;
+  border: 3px solid;
+  box-shadow: 20px 10px 18px 2px #5d77a0;
+}
+
+.Img_hobbies
+{
+  padding-top: 10em;
+
+}
+.Om
+{
+  width: 20em;
+  height: 17em;
+  border: solid;
+  border-color: #0000FF;
+}
+.Tennis
+{
+  width: 25em;
+  height: 17em;
+  border: solid;
+  border-color: white;
+}
+
+.Clef
+{
+  width: 20em;
+}
+/**************Overlay*****************/
+#Overlay 
+{
+  display: none;
+  position: fixed;
+  top:0; 
+  right:0; 
+  bottom:0; 
+  left:0;
+  background-color:   5d77a0;
+  z-index: 1000;
+  text-align: center;
+
+
+}
+#Overlay:target
+{
+  display:block;
+}
+.contact
+{
+    color:  #6495ED;
+  background-color: 5d77a0;
+}
+#contenu
+{
+	color:  #6495ED;
+	background-color: black;
+}
+#form
+{
+	text-align: center;
+	width: 50em;
+	background-color: grey;
+	margin-left: 22em;
+}

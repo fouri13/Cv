@@ -1,0 +1,109 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<head>
+    <title>F.Fabien</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/add.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inspiration from: https://dribbble.com/shots/1428271-iOS7-Challenge-App-->
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 sidebar2">
+                <div class="logo text-center">
+                    <img src="img/photoid.jpg" class="img-responsive center-block" alt="Logo">
+                  <h4>Fournier Fabien</h4>
+                    <div class="coins">
+                      <i class="glyphicon glyphicon-lock" aria-hidden="true"></i>
+                    </div>
+                      <p class="coins">Web Développeur junior</p>
+                    <div>
+                        <button onclick="on()"type="button" class="btn btn-default Add-friend">
+                        <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>  Me contacter</button>
+                    </div>
+                </div>
+                <br>
+
+                <div class="left-navigation">
+                    <ul class="list">
+                    <li onclick="document.location.href='index.html'"><i class="glyphicon glyphicon-user" id="Profil" aria-hidden="true"></i>Profil</li>
+                    <li onclick="document.location.href='content/ExperiencePro.html'"><i class="fa fa-hand-o-right" id="Experience" aria-hidden="true"></i>Experience Pro</li></a>
+                    <li onclick="document.location.href='content/Comp.html'"><i class="fa fa-certificate" id="Comp" aria-hidden="true"></i>Competences Habillitions</li>
+                    <li onclick="document.location.href='content/Hobbies.html'"><i class="fa fa-users" id="Hobbies" aria-hidden="true"></i>Hobbies</li>
+                    <li onclick="document.location.href='img/Cv1.pdf'"><i class="glyphicon glyphicon-download-alt" id="Hobbies" aria-hidden="true"></i>Cv en PDF</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main_content">
+                <div id="Index">
+                    <h1>Web Développeur Junior</h1>
+                    <br><br>
+                    <figure>
+                        <img src="img/Bande.jpg">
+                    </figure>
+                    <br><br>
+                    <p>
+                        Âgé de 26 ans, vivant dans la région de Marseille. Je cherche un emploi dans le développement informatique afin de pouvoir apprendre et progresser dans ce milieu qui me passionne.<br> Ayant eu l'occasion d'avoir mes premières approches avec la programmation, j'ai pu découvrir le langage C, Html, Css, JavaScript et PHP. Me restant encore du chemin avant de pouvoir être un développeur confirmé, je souhaite pouvoir évoluer au sein d'une équipe avec qui je pourrais me perfectionner.<br>
+                        Durant ma carrière professionnelle j'ai eu l'occasion de travailler dans diverses entreprises et secteurs professionnels différents .
+                        J'ai aussi fait de la musique durant quelques années armée de mon contrôleur et mon pc portable.<br>
+                        J'ai eu l'occasion de voir le secteur de l'industrie à plusieurs reprises en tant que manœuvre, technicien et dans le transport autant sur le quai qu'en livraison, le bâtiment qui a été une bonne expérience j'ai pu faire de la maçonnerie, du placo, de la peinture etc... Par la suite j'ai fait une formation d'électricien mais mon manque d’expérience m'a donné du mal à trouver du travail dans ce domaine, mais cela m'a quand même permis de travailler en tant que technicien de maintenance dans un atelier.<br>
+                        J'aime aussi le sport ayant pratiqué notamment du football et du tennis plusieurs années. La compétition et l'esprit d'équipe sont un trait de caractère chez moi.<br><br>
+                    </p>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>
+        <div id="Overlay">
+            <div id="contenu">
+            <div class="contact">
+                <h3>FOURNIER FABIEN</h3>
+                    <ul>
+                        <li>26ans</li>
+                        <li>06.60.90.03.64</li>
+                          <li>fabfournier11@gmail.com</li>
+                            <li>Rognac</li>
+                    </ul>
+            </div>
+                <div class="col-md-8 col-md-offset-2" id="form">
+                    <form class="form-horizontal"  method="POST"  action="content/mail.php">
+                        <div class="form-group">
+                            <label for="Nom">Nom</label>
+                            <input type="text" name="User_name" class="form-control" id="Nom" placeholder="Votre Nom">
+                        </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" name="User_email" class="form-control" id="Email" placeholder="Email@mail.com">
+                    </div>
+                    <div class="form-group ">
+                        <label for="Message">Message</label>
+                        <textarea  class="form-control" name="User_message" placeholder="Votre Message"></textarea> 
+                    </div>
+                        <button type="submit" class="btn btn-default">Valider</button>
+                    </form>
+                    <div>
+                    	<button onclick="off()">Annuler</button>
+                    </div>
+                    <script>
+                    	function on() 
+                    	{
+   							document.getElementById("Overlay").style.display = "block";
+						}
+                    	function off() 
+                    	{
+    						document.getElementById("Overlay").style.display = "none";
+						} 
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
